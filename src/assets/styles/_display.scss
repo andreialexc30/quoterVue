@@ -1,0 +1,70 @@
+.quoter_wrapper {
+    display: grid;
+    place-items: center;
+    width: 80vw;
+    height: 50vh;
+    padding: 4em;
+    background-color: #000000c2;
+
+    @media screen and (max-width: 500px) {
+        padding: 2em;
+    }
+
+    &--title {
+        font-size: 3rem;
+        color: #26fcd1;
+
+        @media screen and (max-width: 500px) {
+            font-size: 1.75rem;
+        }
+    }
+
+    .content_wrapper {
+        padding: 1em;
+
+        .displayed_quote {
+            margin: 2em 0;
+            font-size: 1.45rem;
+
+            @media screen and (max-width: 500px) {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+        }
+
+        .displayed_author {
+            margin: 1.5em 0;
+            font-size: 1.2rem;
+        }
+
+        .generator {
+            position: relative;
+            width: 125px;
+            height: 25px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: .25px;
+            background-color: #26fcd1;
+            border: none;
+            border-radius: .35em;
+            box-shadow: 0px 7px 7px #173d29;
+            transition: all .2s ease-in-out;
+            z-index: 1;
+        }
+
+        .generator::after {
+            background-color: #f0f0f0;
+            border-radius: inherit;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .2s ease-in;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@media screen and (max-width: 500px) {
+   body{
+    overflow-y: visible !important;
+    font-size: 1rem;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .info_article {
+      width: 50vw;
+   }
+}
