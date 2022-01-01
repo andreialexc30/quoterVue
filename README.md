@@ -7,7 +7,7 @@ This random quote generator fetches a random quote alongside it's author (if ava
 <ul>
   <li>Vanilla repo: https://github.com/andreialexc30/randomQuoter</li>
   <li>Live vanilla project: https://andreialexc30.github.io/randomQuoter/</li>
-  <li>Available at: TBA</li>
+  <li>Available at: https://quotervue.netlify.app</li>
 </ul>
 
 
